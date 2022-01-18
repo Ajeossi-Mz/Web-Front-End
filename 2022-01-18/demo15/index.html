@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1,
+      .box4 {
+        margin: 200px;
+        width: 200px;
+        height: 200px;
+        background-color: green;
+      }
+
+      .box1 .box2 {
+        /* 
+          绝对定位 脱离原来的位置
+          直到找到父元素里面有定位属性（最终body）
+          后面的兄弟元素会顶替它的位置
+        */
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+      }
+
+      .box1 .box3,
+      .box4 .box6 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+
+      .box4 .box5 {
+        /* 
+          绝对定位 相对于原来的位置进行定位
+          后面的兄弟元素不会顶替它的位置
+        */
+        position: relative;
+        top: 50px;
+        left: 50px;
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+      }
+
+      .relative-box {
+        position: relative;
+        border: 1px solid black;
+      }
+
+      .box7 {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+      }
+
+      .box7 .box8 {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <div class="box2"></div>
+      <div class="box3"></div>
+    </div>
+    <hr />
+    <div class="relative-box">
+      <div class="box4">
+        <div class="box5"></div>
+        <div class="box6"></div>
+      </div>
+    </div>
+    <hr />
+    <!-- 一般定位都是子绝父相 -->
+    <div class="box7">
+      <div class="box8"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 去除轮廓 */
+      input,
+      textarea {
+        outline: none;
+      }
+      /* 
+        outline-color 设置轮廓颜色
+        outline-style 设置轮廓形状
+        outline-width 设置轮廓宽度
+       */
+
+      /* 
+        知识补充：
+        浏览器对父子选择器的匹配规则
+        从下到上
+        从右至左
+        why? 查找速度快
+        .nav header h3 span {...} 
+        从span开始找
+        */
+
+      /* 
+          button 与 input[submit] (用于表单提交)
+         */
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <input type="text" />
+      <br />
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+    </div>
+  </body>
+</html>
