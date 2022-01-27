@@ -13,10 +13,66 @@
         /* 行内块元素和行内元素对齐 */
         vertical-align: middle;
       }
+
+      img.top {
+        vertical-align: text-top;
+      }
+
+      img.bottom {
+        vertical-align: text-bottom;
+      }
+
+      img.middle {
+        vertical-align: middle;
+      }
     </style>
   </head>
   <body>
     <img src="../../img/joker.png" alt="" />
     <span>我是一个可怜的小丑</span>
+    <br />
+    <div>
+      An
+      <img
+        src="https://mdn.mozillademos.org/files/12245/frame_image.svg"
+        alt="link"
+        width="32"
+        height="32"
+      />
+      image with a default alignment.
+    </div>
+    <div>
+      An
+      <img
+        class="top"
+        src="https://mdn.mozillademos.org/files/12245/frame_image.svg"
+        alt="link"
+        width="32"
+        height="32"
+      />
+      image with a text-top alignment.
+    </div>
+    <div>
+      An
+      <img
+        class="bottom"
+        src="https://mdn.mozillademos.org/files/12245/frame_image.svg"
+        alt="link"
+        width="32"
+        height="32"
+      />
+      image with a text-bottom alignment.
+    </div>
+    <div>
+      An
+      <img
+        class="middle"
+        src="https://mdn.mozillademos.org/files/12245/frame_image.svg"
+        alt="link"
+        width="32"
+        height="32"
+      />
+      image with a middle alignment.
+    </div>
   </body>
 </html>

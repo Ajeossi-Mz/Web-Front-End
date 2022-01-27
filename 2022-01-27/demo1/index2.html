@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 400px;
+        height: 500px;
+        border: 1px solid black;
+        /* 用来决定表格的边框是分开的还是合并的 */
+        border-collapse: collapse;
+        text-align: center;
+      }
+
+      table > thead > tr > th {
+        border: 1px solid black;
+      }
+
+      table > tbody > tr > td {
+        border: 1px solid black;
+      }
+
+      table > tfoot > tr > td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        俺是一个表格
+      </caption>
+      <thead>
+        <tr>
+          <th>Month</th>
+          <th>Savings</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jan</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Feb</td>
+          <td>130</td>
+        </tr>
+        <tr>
+          <td>Mar</td>
+          <td>120</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Sum</td>
+          <td>350</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

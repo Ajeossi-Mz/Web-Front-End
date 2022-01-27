@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input[type='text']::placeholder {
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 单行文本域 -->
+    <form action="https://www.baidu.com/" method="get">
+      账号:<input type="text" placeholder="请输入..." name="username" />
+      <input type="reset" value="清空" />
+      <input type="submit" value="提交" />
+    </form>
+
+    <form action="">
+      密码:<input type="password" placeholder="请输入..." />
+    </form>
+
+    <br />
+    <!-- 单选框 -->
+    <input type="radio" name="sex" checked />male
+    <input type="radio" name="sex" />female
+    <input type="radio" name="sex" />hemophrodite
+
+    <br />
+    <br />
+    <!-- 复选框 -->
+    <input type="checkbox" checked />篮球 <input type="checkbox" />足球
+    <input type="checkbox" checked />棒球 <input type="checkbox" />乒乓球
+
+    <br />
+    <br />
+    <!-- lable标签 -->
+    <form action="">
+      <label for="account">账号:</label><input type="text" id="account" />
+      <br />
+      <label for="account">密码:</label><input type="text" id="account" />
+    </form>
+
+    <br />
+    <br />
+    <!-- 下拉菜单 -->
+    <form action="">
+      <select name="" id="">
+        <option value="">选项1</option>
+        <option value="">选项2</option>
+        <option value="">选项3</option>
+        <option value="">选项4</option>
+      </select>
+    </form>
+
+    <br />
+    <br />
+    <!-- 分组下拉菜单 -->
+    <form>
+      <select name="">
+        <optgroup label="组1">
+          <option value="opt1">选项1-1</option>
+          <option value="opt2">选项1-2</option>
+        </optgroup>
+        <optgroup label="组2">
+          <option value="opt3">选项2-1</option>
+          <option value="opt4">选项2-2</option>
+        </optgroup>
+      </select>
+    </form>
+  </body>
+</html>
