@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      tr > td {
+        border: none;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+      }
+
+      tr > th {
+        border: none;
+        border-left: 1px solid black;
+      }
+
+      table {
+        border: 1px solid black;
+        border-left: none;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- table标签注意点 -->
+    <!-- 
+      cellpadding: 单元格的内边距
+      cellspacing: 单元格之间的空白
+     -->
+    <table
+      border="1"
+      width="300px"
+      align="center"
+      cellpadding="10px"
+      cellspacing="0px"
+    >
+      <caption>
+        俺是一个表格
+      </caption>
+      <tr>
+        <th>col1</th>
+        <th>col2</th>
+        <th>col3</th>
+      </tr>
+      <tr>
+        <td>a1</td>
+        <td>a2</td>
+        <td>a3</td>
+      </tr>
+      <tr>
+        <td>b1</td>
+        <td>b2</td>
+        <td>b3</td>
+      </tr>
+      <tr>
+        <td>c1</td>
+        <td>c2</td>
+        <td>c3</td>
+      </tr>
+    </table>
+  </body>
+</html>

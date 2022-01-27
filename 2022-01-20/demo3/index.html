@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 300px;
+        height: 300px;
+        /* 设置标题的位置 */
+        caption-side: bottom;
+        /* 合并边框 */
+        border-collapse: collapse;
+        /* 单元格长度固定 */
+        table-layout: fixed;
+        /* 允许长单词换行到下一行 */
+        word-wrap: break-word;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 此处设置border和直接css设置border的区别是单元格有无边框 -->
+    <table border="1">
+      <caption>
+        测试表格
+      </caption>
+      <tr>
+        <td>1</td>
+        <td>20220120123456789</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>8</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>5</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+      </tr>
+    </table>
+  </body>
+</html>

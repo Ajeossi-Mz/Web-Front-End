@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .icon {
+        display: inline-block;
+        background: url(./img/img.png) no-repeat;
+        /* 
+          缩放的倍数 = 单张小图片的实际宽高 / 想要设置的宽高
+         */
+        height: 32px;
+        width: 32px;
+        /* 
+          背景图片大小 = 雪碧图的实际宽高 / 缩放的倍数
+         */
+        background-size: 32px 96px;
+      }
+      .icon-lantern {
+        background-position: 0 0;
+      }
+      .icon-good {
+        background-position: 0 -32px;
+      }
+      .icon-gift {
+        /* 
+          定位像素 = 截取位置 / 缩放倍数
+         */
+        background-position: 0 -64px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      从https://www.iconfont.cn/?spm=a313x.7781069.1998910419.d4d0a486a
+      下载自己喜欢的图标，然后使用CssSprite工具生成雪碧图
+
+      1.现图标宽高与原宽高的百分比
+      2.背景图片技照百分比缩放宽高
+      3.所有定位值按照百分比更改
+     -->
+    <div>
+      <i class="icon icon-gift"></i>
+      <i class="icon icon-good"></i>
+      <i class="icon icon-lantern"></i>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .box {
+      /* 
+       * display: table-cell;
+       * vertical-align: middle;
+       * 可以让盒子内元素垂直居中
+       */
+      display: table-cell;
+      height: 400px;
+      width: 400px;
+      border: 2px solid pink;
+      /* 
+       * 对于具有文本类属性的元素，text-align属性也可以使其水平居中显示。
+       * 具有文本类属性的元素有：行内元素、行内块元素。
+       * 也就是说text-align属性也可以使这些元素水平居中。
+       */
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .box img {
+      height: 200px;
+      width: 200px;
+    }
+
+    .box .inner-box {
+      /* 
+       * 而对于块级元素的水平居中，可以使用：margin:0 auto
+       */
+      margin: 0 auto;
+      width: 50px;
+      height: 50px;
+      background-color: yellow;
+    }
+  </style>
+  <body>
+    <!-- 元素居中 -->
+
+    <div class="box">
+      <img src="../../img/joker.png" alt="" />
+      <p>Joker</p>
+      <div class="inner-box"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .text {
+      font-size: 18px;
+    }
+    p::before {
+      content: url('../../img/young_boy.png');
+      /* content: attr() 了解下 */
+      display: inline-block;
+      margin-right: 4px;
+      vertical-align: middle;
+    }
+  </style>
+  <body>
+    <!-- 
+      css中（单冒号）:after和（双冒号）::after的区别
+      :after是伪元素 
+      ::after是伪类
+
+      什么是伪类?
+      CSS伪类是添加到选择器的关键字，指定要选择的元素的特殊状态。例如，:hover可被用于在用户将鼠标悬停在按钮上时改变按钮的颜色。
+
+      ::after表示法是在CSS 3中引入的，::符号是用来区分伪类和伪元素的。支持CSS3的浏览器同时也都支持CSS2中引入的表示法:after。
+
+      element:after { style properties } /* CSS2 语法 */
+
+      element::after { style properties } /* CSS3 语法 */
+   -->
+    <p class="text">follow me</p>
+  </body>
+</html>
