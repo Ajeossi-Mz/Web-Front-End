@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 600px;
+        height: 400px;
+        border: 1px solid black;
+        columns: 150px 3;
+        /* 设置列与列之间的间隙 */
+        column-gap: 5px;
+        column-rule: 1px solid black;
+        /*
+          分开写：
+          columns-width: 150px;
+          columns-count: 3;
+         */
+      }
+
+      .box h2 {
+        column-span: all;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 文字多列布局 -->
+    <div class="box">
+      <h2>长津湖之水门桥</h2>
+      <p>
+        黄建新透露，《长津湖》上映后，他们看了很多观众评论，
+        主创就此展开复盘和讨论，在第一部的基础上再度创作，
+        对耿乐饰演的杨营长等角色进行了新的拓展。“一直到前天早上6点多，
+        我和徐克导演一起把《长津湖之水门桥》做完，
+        交给华夏的拷贝厂时，才松了一口气。”
+      </p>
+      <p>
+        陈凯歌则说，早在创作之初，主创就意识到，创造人物是第一位的工作，
+        只有创造出人物，才能传播抗美援朝的伟大精神。
+        “还记得在拍摄时，我和吴京合作得非常好，但凡某一天他拍完了说，
+        ‘凯歌导演晚上咱俩喝一口’，我就知道他要琢磨戏，要聊人物了。
+        易烊千玺我过去没合作过，第一天在水边上拍他扔石子的戏，一个镜头连续拍了16条。
+        我的目的很简单，一方面是戏的要求，另一方面也想试试他的心性。他每一条都做得非常认真。”
+      </p>
+    </div>
+  </body>
+</html>

@@ -44,4 +44,15 @@ Thx 2 AiXiaoYe
 &emsp; &emsp;|<br/>
 &emsp; &emsp;|- demo1  --> table标签注意点<br/>
 &emsp; &emsp;|- demo2  --> 表单元素<br/>
-&emsp; &emsp;|- demo3  --> 表单元素<br/>
+&emsp; &emsp;|- demo3  --> @font-face自定义字体<br/>
+
+2022-02-11<br/>
+&emsp; &emsp;|<br/>
+&emsp; &emsp;|- demo1  --> 字体设置<br/>
+&emsp; &emsp;|- demo2  --> Blog website<br/>
+&emsp; &emsp;|- demo3  --> footer置于底部<br/>
+
+2022-02-16<br/>
+&emsp; &emsp;|<br/>
+&emsp; &emsp;|- demo1  --> flex notes<br/>
+&emsp; &emsp;|- demo2  --> flex website<br/>
